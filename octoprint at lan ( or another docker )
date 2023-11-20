@@ -1,0 +1,1 @@
+docker network create -d macvlan --subnet=lo.cal.sub.net --gateway=lo.cal.gate.way --ip-range=lo.ca.l.ip/30 -o parent=eth0 lanconnect
