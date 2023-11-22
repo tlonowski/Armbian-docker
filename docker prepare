@@ -10,10 +10,10 @@ Steps to install and run docker at armbian
     docker run --rm hello-world # test - you may skip
     docker --version
  
+    #not necessary
     apt install python3-pip
     apt install python3-dev
     apt install libffi-dev
     apt install libssl-dev
     pip3 install docker-compose
     docker-compose --version
- 
