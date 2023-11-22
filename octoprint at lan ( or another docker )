@@ -4,3 +4,5 @@ docker run -d -v octoprint:/octoprint --device /dev/ttyACM0:/dev/ttyACM0 --devic
 docker run --restart unless-stopped -d -v octoprint:/octoprint -p 80:80 --name octoprint octoprint/octoprint
 docker inspect dockerName
 docker run --name adguardhome --restart unless-stopped -d --network=lanconnect -v /home/tlonowski/container/workdir:/opt/adguardhome/work -v /home/tlonowski/container/confdir:/opt/adguardhome.conf -d adguard/adguardhome
+#Home Assistant at lan
+docker run -d –name = homeassistant -v your_home_directory:/config –net=host homeassistant/home-assistant
